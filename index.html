@@ -5,6 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anoop Basani | Sr. Data Analyst</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #0f2027; color: white; }
+    header {
+      position: fixed;
+      top: 0; width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 1rem 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    header a {
+      color: #00e5ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container { max-width: 1000px; margin: auto; padding: 6rem 1rem 2rem; }
+    h1, h2 { color: #00e5ff; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 1rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: scale(1.03); background: rgba(0,255,255,0.08); }
+    .timeline-entry { margin: 2rem 0; border-left: 3px solid #00e5ff; padding-left: 1rem; }
+    .skills-matrix div { margin: 0.5rem 0; }
+    .achievements ul { list-style: none; padding-left: 0; }
+    .achievements li::before { content: '✅ '; color: #00e5ff; }
+    form input, form textarea {
+      width: 100%; padding: 0.8rem; margin: 0.5rem 0;
+      border: none; border-radius: 5px; font-size: 1rem;
+    }
+    form button {
+      padding: 0.7rem 2rem;
+      font-size: 1rem;
+      background: #00e5ff;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      background: #081420;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,98 +70,64 @@
 
   <section id="home" class="container">
     <h1>Anoop Basani</h1>
-    <p>Senior Data Analyst with 9+ Years Experience | BI • Automation • Insights</p>
+    <p>Senior Data Analyst with 9+ Years Experience | BI • Cloud • Automation • Insights</p>
   </section>
 
   <section id="projects" class="container">
     <h2>Projects</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Hourly Sales Projection Dashboard</h3>
-        <p><strong>Tools:</strong> Power BI, BigQuery, Power Automate</p>
-        <p>Forecasted real-time sales & alerts for Macy’s leadership.</p>
-      </div>
-      <div class="card">
-        <h3>Enterprise Data Governance</h3>
-        <p><strong>Tools:</strong> Collibra, Confluence, STM</p>
-        <p>Built data lineage and policy compliance architecture across platforms.</p>
-      </div>
-      <div class="card">
-        <h3>Risk & Compliance Analytics</h3>
-        <p><strong>Tools:</strong> Tableau, Alteryx, PostgreSQL</p>
-        <p>Monitored risk KPIs with dynamic dashboards at Capital One.</p>
-      </div>
-      <div class="card">
-        <h3>Customer Segmentation Insights</h3>
-        <p><strong>Tools:</strong> Python, SQL, Tableau</p>
-        <p>Performed cohort + RFM segmentation for Cigna marketing teams.</p>
-      </div>
+      <div class="card"><h3><a href="project1.html">Hourly Sales Projection Dashboard</a></h3><p>Real-time forecasting using Power BI + Control-M for Macy’s.</p></div>
+      <div class="card"><h3><a href="project2.html">Enterprise Data Governance</a></h3><p>End-to-end lineage and traceability using Collibra + STM.</p></div>
+      <div class="card"><h3><a href="project3.html">Risk & Compliance Analytics</a></h3><p>Compliance dashboards with anomaly alerts for Capital One.</p></div>
+      <div class="card"><h3><a href="project4.html">Customer Segmentation & Retention</a></h3><p>Cohort + RFM models driving retention uplift for Cigna.</p></div>
     </div>
   </section>
 
   <section id="experience" class="container">
     <h2>Work Experience</h2>
-    <div class="timeline-entry">
-      <h3>Sr. Data Analyst – Macy’s <img src="https://logo.clearbit.com/macys.com" height="20"/></h3>
-      <p>Dec 2024 – Present</p>
-      <ul>
-        <li>Power BI dashboards, BigQuery pipelines</li>
-        <li>Automated projections via Control-M</li>
-        <li>Collibra + STM for governance</li>
-      </ul>
-    </div>
-    <div class="timeline-entry">
-      <h3>Data Analyst – Capital One <img src="https://logo.clearbit.com/capitalone.com" height="20"/></h3>
-      <p>Feb 2023 – Dec 2024</p>
-      <ul>
-        <li>Risk dashboards with Tableau</li>
-        <li>ETL automation using Alteryx + SQL</li>
-      </ul>
-    </div>
-    <div class="timeline-entry">
-      <h3>Data Analyst – Amazon <img src="https://logo.clearbit.com/amazon.com" height="20"/></h3>
-      <p>Jul 2019 – Jul 2021</p>
-      <ul>
-        <li>Warehouse dashboards in Power BI</li>
-        <li>Reduced defect rates with root-cause analysis</li>
-      </ul>
-    </div>
+    <div class="timeline-entry"><h3>Macy’s – Sr. Data Analyst</h3><p>Dec 2024 – Present</p><ul><li>Power BI dashboards + BigQuery pipelines</li><li>Control-M automations</li><li>Collibra + STM integration</li></ul></div>
+    <div class="timeline-entry"><h3>Capital One – Data Analyst</h3><p>Feb 2023 – Dec 2024</p><ul><li>Risk dashboarding with Tableau</li><li>Alteryx + SQL ETL optimization</li></ul></div>
+    <div class="timeline-entry"><h3>Honeywell – Sr. Data Analyst</h3><p>2022 – 2023</p><ul><li>Built BI solutions in Power BI</li><li>Data modeling in Azure Synapse</li></ul></div>
+    <div class="timeline-entry"><h3>Cigna Corp – Data Analyst</h3><p>2021 – 2022</p><ul><li>Retention dashboarding</li><li>Python for patient trend analysis</li></ul></div>
+    <div class="timeline-entry"><h3>Verizon – Analyst</h3><p>2020 – 2021</p><ul><li>Telecom analytics pipelines</li><li>SSIS, Power BI reports</li></ul></div>
+    <div class="timeline-entry"><h3>Amazon – Analyst</h3><p>2019 – 2020</p><ul><li>Fulfillment insights</li><li>Warehouse defect reduction dashboards</li></ul></div>
+    <div class="timeline-entry"><h3>CSC – Analyst</h3><p>2015 – 2019</p><ul><li>Legacy system modernization</li><li>SQL + Tableau reports</li></ul></div>
   </section>
 
   <section id="skills" class="container">
-    <h2>Skills Matrix</h2>
+    <h2>Skill Matrix</h2>
     <div class="skills-matrix">
-      <div><img src="https://www.svgrepo.com/show/354202/power-bi.svg"/> Power BI</div>
-      <div><img src="https://www.svgrepo.com/show/448234/tableau.svg"/> Tableau</div>
-      <div><img src="https://www.svgrepo.com/show/331370/google-bigquery.svg"/> BigQuery</div>
-      <div><img src="https://www.svgrepo.com/show/354238/python.svg"/> Python</div>
-      <div><img src="https://www.svgrepo.com/show/303251/sql-database-generic.svg"/> SQL</div>
-      <div><img src="https://www.svgrepo.com/show/353968/microsoft-power-automate.svg"/> Power Automate</div>
+      <div><strong>Power BI:</strong> Create real-time dashboards and data visualizations</div>
+      <div><strong>Tableau:</strong> Build executive reporting layers & KPI scorecards</div>
+      <div><strong>BigQuery:</strong> Design large-scale data models & queries</div>
+      <div><strong>SQL:</strong> Write complex joins, CTEs, window functions</div>
+      <div><strong>Python:</strong> Automate workflows, build ML models, parse data</div>
+      <div><strong>Control-M / Power Automate:</strong> Schedule data jobs with alert triggers</div>
     </div>
   </section>
 
-  <section id="achievements" class="container">
+  <section id="achievements" class="container achievements">
     <h2>Achievements</h2>
     <ul>
-      <li>🏆 Delivered 40+ BI dashboards across Retail, Finance, Healthcare</li>
-      <li>🚀 Automated ETL + Reporting workflows in 3 companies</li>
-      <li>📈 Enabled end-to-end audit traceability via Collibra</li>
-      <li>☁️ Led GCP → Azure transitions across teams</li>
+      <li>Built 40+ BI dashboards used across 3 industries</li>
+      <li>Improved data refresh SLAs by 60%</li>
+      <li>Migrated legacy pipelines to BigQuery/Azure Synapse</li>
+      <li>Enabled 100% traceable pipelines with Collibra</li>
     </ul>
   </section>
 
   <section id="contact" class="container">
     <h2>Contact Me</h2>
     <form action="mailto:anoopdataanalyst@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required /><br/>
-      <input type="email" name="email" placeholder="Your Email" required /><br/>
-      <textarea name="message" rows="5" placeholder="Your message..." required></textarea><br/>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Anoop Basani | Built with Data, Strategy & Precision</p>
+    <p>© 2025 Anoop Basani | Data Analytics Portfolio</p>
   </footer>
 </body>
 </html>
