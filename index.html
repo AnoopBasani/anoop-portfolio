@@ -3,78 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anoop Basani | Senior Data Analyst</title>
+  <title>Anoop Basani | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="data-theme">
   <section class="hero">
     <div class="container">
       <h1>Anoop Basani</h1>
-      <p>Senior Data Analyst | 9+ Years of Analytics, Automation & BI Excellence</p>
-      <p class="intro-tagline">Building scalable dashboards, automating data pipelines, and delivering insights that drive results.</p>
+      <p>Senior Data Analyst | 9+ Years of Data Strategy & BI Excellence</p>
       <div class="cta">
-        <a href="mailto:anoopdataanalyst@gmail.com" class="btn">📧 Email Me</a>
-        <a href="resume.pdf" class="btn" download>📄 Download Resume</a>
-        <a href="http://www.linkedin.com/in/anoop-reddy-7719a8171" class="btn" target="_blank">💼 LinkedIn</a>
+        <a href="mailto:anoopdataanalyst@gmail.com" class="btn">📧 Email</a>
+        <a href="resume.pdf" class="btn" download>📄 Resume</a>
+        <a href="https://linkedin.com/in/anoop-reddy-7719a8171" class="btn">💼 LinkedIn</a>
       </div>
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a seasoned Data Analyst with 9+ years of experience across Retail, Telecom, and FinTech domains. I specialize in creating executive-level dashboards, automating reporting workflows, and translating complex data into simple, actionable business insights. My tools of choice include Power BI, Tableau, BigQuery, SQL, Python, Power Automate, Control-M, and more.</p>
-      <p>I’ve led data transformations, built self-service BI solutions, and improved data accessibility for decision-makers across departments.</p>
     </div>
   </section>
 
   <section class="projects">
     <div class="container">
-      <h2>Featured Projects</h2>
+      <h2>Projects</h2>
       <div class="grid">
         <div class="card">
+          <img src="https://www.svgrepo.com/show/354202/power-bi.svg" alt="Power BI" class="card-icon"/>
           <h3>Hourly Sales Projection</h3>
-          <p><strong>Tools:</strong> Power BI, BigQuery, Power Automate</p>
-          <p>Interactive dashboard with real-time hourly sales insights and automated refresh using Power Automate + Control-M.</p>
-          <a href="project1.html" class="btn-small">View Case Study →</a>
+          <p>Power BI + BigQuery + Automations</p>
+          <a href="project1.html" class="btn-small">View Case Study</a>
         </div>
         <div class="card">
-          <h3>Enterprise Data Transformation Tracker</h3>
-          <p><strong>Tools:</strong> BigQuery, STM, Confluence</p>
-          <p>Built enterprise-wide data transformation documentation tracker integrated with governance tools and GCP backend.</p>
-          <a href="project2.html" class="btn-small">View Case Study →</a>
+          <img src="https://www.svgrepo.com/show/331370/google-bigquery.svg" alt="BigQuery" class="card-icon"/>
+          <h3>Data Transformation Tracker</h3>
+          <p>GCP + STM + Confluence</p>
+          <a href="project2.html" class="btn-small">View Case Study</a>
         </div>
         <div class="card">
+          <img src="https://www.svgrepo.com/show/448234/tableau.svg" alt="Tableau" class="card-icon"/>
           <h3>Customer Behavior Analysis</h3>
-          <p><strong>Tools:</strong> Tableau, BigQuery, SQL</p>
-          <p>Created a marketing-focused dashboard with RFM segmentation, funnel drop-offs, and retention trends.</p>
-          <a href="project3.html" class="btn-small">View Case Study →</a>
+          <p>Tableau + SQL + RFM Segments</p>
+          <a href="project3.html" class="btn-small">View Case Study</a>
         </div>
         <div class="card">
+          <img src="https://www.svgrepo.com/show/448226/snowflake.svg" alt="Snowflake" class="card-icon"/>
           <h3>Supply Chain Delay Tracker</h3>
-          <p><strong>Tools:</strong> Power BI, SQL Server</p>
-          <p>Automated performance metrics and alerts for vendor delay and SLA compliance tracking across regions.</p>
-          <a href="project4.html" class="btn-small">View Case Study →</a>
+          <p>Dashboards + Alerts + KPI Monitoring</p>
+          <a href="project4.html" class="btn-small">View Case Study</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="skills">
+  <section class="skills-matrix">
     <div class="container">
-      <h2>Skills & Technologies</h2>
-      <ul class="skills-grid">
-        <li>Power BI</li><li>Tableau</li><li>SQL</li><li>Python</li>
-        <li>BigQuery</li><li>Snowflake</li><li>Azure Synapse</li><li>Control-M</li>
-        <li>Power Automate</li><li>Collibra</li><li>STM</li><li>Confluence</li>
-      </ul>
+      <h2>Skills Matrix</h2>
+      <div class="matrix-grid">
+        <div class="matrix-card"><h3>BI Tools</h3><img src="https://www.svgrepo.com/show/354202/power-bi.svg"/><img src="https://www.svgrepo.com/show/448234/tableau.svg"/></div>
+        <div class="matrix-card"><h3>Languages</h3><img src="https://www.svgrepo.com/show/303251/sql-database-generic.svg"/><img src="https://www.svgrepo.com/show/354238/python.svg"/></div>
+        <div class="matrix-card"><h3>Cloud</h3><img src="https://www.svgrepo.com/show/331370/google-bigquery.svg"/><img src="https://www.svgrepo.com/show/448226/snowflake.svg"/></div>
+      </div>
     </div>
   </section>
 
-  <footer>
+  <section class="contact">
     <div class="container">
-      <p>© 2025 Anoop Basani | Built with Data, Strategy, and Precision</p>
+      <h2>Contact Me</h2>
+      <form action="mailto:anoopdataanalyst@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="What's your name?" required />
+        <input type="email" name="email" placeholder="What's your email?" required />
+        <textarea name="message" placeholder="Your message here..." rows="4" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
     </div>
-  </footer>
+  </section>
+
+  <footer><p>© 2025 Anoop Basani | Data Analyst Portfolio</p></footer>
 </body>
 </html>
