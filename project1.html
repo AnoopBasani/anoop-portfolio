@@ -1,1 +1,47 @@
-<html><head><title>Hourly Sales Projection</title><link rel="stylesheet" href="style.css"></head><body><h1>Hourly Sales Projection Dashboard</h1><p>Power BI + BigQuery + Power Automate + Control-M project...</p></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hourly Sales Projection Dashboard | Anoop Basani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="project-page">
+  <section class="project-hero">
+    <div class="container">
+      <h1>Hourly Sales Projection Dashboard</h1>
+      <p class="tagline">Real-time sales insights for fast-paced decision making</p>
+    </div>
+  </section>
+
+  <section class="project-details">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>This dashboard allows leadership to monitor hourly sales and compare them to previous benchmarks, enabling rapid decision making and campaign adjustments.</p>
+
+      <h2>Tools Used</h2>
+      <ul class="tools"><li>Power BI</li><li>BigQuery</li><li>Power Automate</li><li>Control-M</li></ul>
+
+      <h2>Highlights</h2>
+      <ul>
+        <li>Built dynamic DAX for YoY comparisons</li><li>Used Power Automate for alerting</li><li>Scheduled refresh with Control-M</li>
+      </ul>
+
+      <h2>Sample SQL</h2>
+      <pre><code>SELECT store_id, DATE(sale_time) AS sale_date, EXTRACT(HOUR FROM sale_time) AS hour, SUM(sale_amount) AS total FROM `dataset.sales` GROUP BY store_id, sale_date, hour;</code></pre>
+
+      <h2>Dashboard Preview</h2>
+      <div class="iframe-box">
+        <iframe src="https://app.powerbi.com/view?r=samplePlaceholder1" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Anoop Basani | Data Analytics Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>

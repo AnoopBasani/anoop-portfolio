@@ -1,1 +1,47 @@
-<html><head><title>Supply Chain Tracker</title><link rel="stylesheet" href="style.css"></head><body><h1>Supply Chain Delay Tracker</h1><p>Power BI + SQL + Alert Automation project...</p></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supply Chain Delay Tracker | Anoop Basani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="project-page">
+  <section class="project-hero">
+    <div class="container">
+      <h1>Supply Chain Delay Tracker</h1>
+      <p class="tagline">Tracking vendor delays and SLA performance</p>
+    </div>
+  </section>
+
+  <section class="project-details">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>Dashboard built to help operations monitor late deliveries, vendor performance, and automate alerts when thresholds are breached.</p>
+
+      <h2>Tools Used</h2>
+      <ul class="tools"><li>Power BI</li><li>SQL Server</li><li>Power Automate</li></ul>
+
+      <h2>Highlights</h2>
+      <ul>
+        <li>Created automated alerts for delay thresholds</li><li>Mapped supply chain KPIs with Power BI</li><li>Integrated SLA tracking reports</li>
+      </ul>
+
+      <h2>Sample SQL</h2>
+      <pre><code>SELECT shipment_id, vendor_id, DATEDIFF(day, dispatch, delivery) AS delay FROM logistics.shipments;</code></pre>
+
+      <h2>Dashboard Preview</h2>
+      <div class="iframe-box">
+        <iframe src="https://app.powerbi.com/view?r=samplePlaceholder4" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Anoop Basani | Data Analytics Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>
